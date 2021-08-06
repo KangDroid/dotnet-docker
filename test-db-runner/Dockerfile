@@ -1,6 +1,9 @@
 FROM mcr.microsoft.com/mssql/server:2019-latest
 MAINTAINER Jason HyunWoo Kang, https://github.com/KangDroid
 
+ARG DB_PASSWORD helloWorld@
+
+ENV SA_PASSWORD $DB_PASSWORD
 ENV ACCEPT_EULA Y
 EXPOSE 1433
 
