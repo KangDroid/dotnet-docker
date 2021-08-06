@@ -1,7 +1,6 @@
 FROM mcr.microsoft.com/mssql/server:2019-latest
 MAINTAINER Jason HyunWoo Kang, https://github.com/KangDroid
 
-ENV SA_PASSWORD testPassword@
 ENV ACCEPT_EULA Y
 EXPOSE 1433
 
